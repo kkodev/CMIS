@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.summary      = "Apache Chemistry ObjectiveCMIS."
 
   s.description  = <<-DESC
-                   Apache Chemistry ObjectiveCMIS.
+                   Apache Chemistry ObjectiveCMIS. Please see http://chemistry.apache.org/objective-c/objectivecmis.html for more details.
                    DESC
 
   s.homepage     = "https://github.com/FWKamil/CMIS"
