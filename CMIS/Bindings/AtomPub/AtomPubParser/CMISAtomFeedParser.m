@@ -88,8 +88,12 @@
         // Delegate parsing of AtomEntry element to the entry child parser
         self.childParserDelegate = [CMISAtomEntryParser atomEntryParserWithAtomEntryAttributes:attributeDict parentDelegate:self parser:parser];
     } else if ([elementName isEqualToString:kCMISAtomEntryLink]) {
+
         CMISAtomLink *link = [[CMISAtomLink alloc] init];
-        [link setValuesForKeysWithDictionary:attributeDict];
+        NSArray *attributes = @[ @"rel", @"type", @"href" ];
+        for (NSString *attr in attributes)
+            [link setValue:attributeDict[attr] forKey:attr];
+
         [self.feedLinkRelations addObject:link];
     }
     
