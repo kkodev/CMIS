@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CMIS"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.platform     = :ios, '6.0'
   s.summary      = "Apache Chemistry ObjectiveCMIS."
 
@@ -13,11 +13,11 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'Apache License', :file => 'LICENSE' }
   s.author       = { "Kamil Kocemba" => "kamil@futureworkshops.com" }
 
-  s.source       = { :git => "git@github.com:FWKamil/CMIS.git", :tag => "0.0.1" }
+  s.source       = { :git => "git@github.com:FWKamil/CMIS.git", :tag => "0.0.2" }
 
   s.source_files = 'CMIS/**/*.{h,m}'
   s.requires_arc = true
   s.frameworks = ['SystemConfiguration']
-  s.xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'OBJECTIVECMIS_VERSION=@\"0.5\"' }
+  s.xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'OBJECTIVECMIS_VERSION=@\"0.5.1\"' }
 
 end
