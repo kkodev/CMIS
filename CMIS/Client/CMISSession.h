@@ -76,7 +76,13 @@
  */
 - (CMISRequest*)retrieveFolderWithOperationContext:(CMISOperationContext *)operationContext
                            completionBlock:(void (^)(CMISFolder *folder, NSError *error))completionBlock;
- 
+
+
+/**
+ * Retrieves children of object with specified indentifier.
+ */
+- (CMISRequest*)retrieveObjectChildren:(NSString *)identifier withCompletionBlock:(void (^)(CMISPagedResult *result, NSError *error))completionBlock;
+
 /**
  * Retrieves the object with the given identifier.
  * completionBlock returns the CMIS object or nil if unsuccessful
